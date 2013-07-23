@@ -5,7 +5,7 @@ end
 
 post '/color' do
 
-  #Create and return a JSON object with the random cell and color given below.
+  #Creates and returns a JSON object with the random cell and color given below.
 
   cell= rand(1..9)
   color= "#" + "%06x" % (rand * 0xffffff)

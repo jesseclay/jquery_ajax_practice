@@ -6,24 +6,7 @@ $(document).ready(function(){
         method: 'post'
       })
       .done(function(response) {
-        $('#color_me li:nth-child(response.cell)').css("background", response.color);
+        $("#color_me li:nth-child("+response.cell+")").css("background", response.color);
       });
-
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      // $.post(this.action, data, function(data) {
-      //   $("#color_me").after('<p>This is working!!</p>');
-      // });
